@@ -12,6 +12,10 @@ export default function TextFrom(props) {
     let newText = text.toLowerCase();
     setText(newText);
   };
+  const toClearWindow = () => {
+    let newText = "";
+    setText(newText);
+  };
 
   const handelOnChange = (event) => {
     setText(event.target.value);
@@ -30,15 +34,25 @@ export default function TextFrom(props) {
             rows="8"
           ></textarea>
         </div>
+
         <button type="button" onClick={toUpperCase} className="btn btn-primary">
           Convert to upper case
         </button>
+
         <button
           type="button"
           onClick={toLowerCase}
           className="btn btn-primary mx-3"
         >
           Convert to lower case
+        </button>
+
+        <button
+          type="button"
+          onClick={toClearWindow}
+          className="btn btn-primary"
+        >
+          Clear Text
         </button>
       </div>
       <div className="container my-3">
