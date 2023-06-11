@@ -27,19 +27,21 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
-        <div className="container my-3">
-          <Routes>
+      {/* <Router> */}
+      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+      <div className="container my-3">
+        {/* <Routes>
             <Route
               path="/"
-              element={<TextFrom heading="Enter text to analyze" mode={mode} />}
+              element={ */}
+        <TextFrom heading="Enter text to analyze" mode={mode} />
+        {/* }
             />
             <Route path="/about" element={<About />} />
             <Route path="/any-other-path" element={<Navigate to="/about" />} />
-          </Routes>
-        </div>
-      </Router>
+          </Routes> */}
+      </div>
+      {/* </Router> */}
     </>
   );
 }
