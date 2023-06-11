@@ -6,11 +6,13 @@ export default function TextFrom(props) {
   const toUpperCase = () => {
     let newText = text.toUpperCase();
     setText(newText);
+    document.title = "Text Converted To Upper Case";
   };
-
+  
   const toLowerCase = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    document.title = "Text Converted To Lower Case";
   };
   const toClearWindow = () => {
     let newText = "";
